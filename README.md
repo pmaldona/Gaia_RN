@@ -16,9 +16,9 @@ The program consists of a main function, which receives as input the path of an 
 
 List element components:
 
-``$sp.id`` character vector from sbml file component id  
-``$sp.idn`` character vector from sbml file component idn  
-``$sp.name`` character vector from sbml file component name   
+``$sp.id`` character vector from the sbml file component id  
+``$sp.idn`` character vector from the sbml file component idn  
+``$sp.name`` character vector from the sbml file component name   
 ``$reac`` list of all reaction extracted form the *.sbml file with their respective reactive and product stoichiometry and components involved.  
 ``$mp`` productive part of the stoichiometric matrix  
 ``$mr`` reactive part of the stoichiometric matrix  
