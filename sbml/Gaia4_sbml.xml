@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.7.0 on 2020-02-04 19:31 with libSBML version 5.11.4. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="test1" name="test1">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H2S" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CO2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="C6H12O6" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H2O" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="FeO" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Fe2C3O6" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CH2O" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Fe2O3H3" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="H" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CO" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CH3COO" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CH3COOH" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="CH4" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="SO42" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="HCO3" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="HS" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="FeII" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="O2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="H2S" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="H2S" stoichiometry="12" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="6" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C6H12O6" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="6" constant="true"/>
+          <speciesReference species="S" stoichiometry="12" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="FeO" stoichiometry="2" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="3" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Fe2C3O6" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R4" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH2O" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="HCO3" stoichiometry="1" constant="true"/>
+          <speciesReference species="FeII" stoichiometry="4" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="10" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH2O" stoichiometry="1" constant="true"/>
+          <speciesReference species="Fe2O3H3" stoichiometry="4" constant="true"/>
+          <speciesReference species="H" stoichiometry="7" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CO" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R7" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CH2O" stoichiometry="3" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH3COO" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2" stoichiometry="2" constant="true"/>
+          <speciesReference species="H" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R8" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CO2" stoichiometry="2" constant="true"/>
+          <speciesReference species="H2" stoichiometry="4" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH3COOH" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R9" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CH3COOH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH4" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R10" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2" stoichiometry="4" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH4" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R11" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CH4" stoichiometry="1" constant="true"/>
+          <speciesReference species="SO42" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="HCO3" stoichiometry="1" constant="true"/>
+          <speciesReference species="HS" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R12" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CH2O" stoichiometry="1" constant="true"/>
+          <speciesReference species="O2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R13" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="H2" stoichiometry="2" constant="true"/>
+          <speciesReference species="O2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="H2O" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R14" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="H2" stoichiometry="3" constant="true"/>
+          <speciesReference species="O2" stoichiometry="1" constant="true"/>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="H2O" stoichiometry="2" constant="true"/>
+          <speciesReference species="H2S" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R15" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="H2S" stoichiometry="2" constant="true"/>
+          <speciesReference species="O2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S" stoichiometry="2" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="2" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R16" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="C6H12O6" stoichiometry="1" constant="true"/>
+          <speciesReference species="O2" stoichiometry="6" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CO2" stoichiometry="6" constant="true"/>
+          <speciesReference species="H2O" stoichiometry="6" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R17" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="FeO" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R18" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="CO" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R19" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="SO42" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R20" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="FeII" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R21" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="O2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R22" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
