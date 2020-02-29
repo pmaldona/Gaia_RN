@@ -24,6 +24,9 @@ List element components:
 ``$mr`` reactive part of the stoichiometric matrix  
 ``$nsp`` components required to become an organization.  
 
+## .smbl Files
+
+A list of sbml files used, proposed as organizational reaction networks, representing the Gaia atmospheric network. They can be found in the sbml folder. 
 
 
 
